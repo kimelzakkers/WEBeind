@@ -1,0 +1,248 @@
+html {
+    background: url(../images/achtergrond2.jpg);
+    background-size: cover no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: avenir;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+header {
+    background-color: white;
+    padding: 1.8vh;
+    box-shadow: 0px 21px 56px -16px rgba(128, 128, 128, 0.69);
+    width: 100%
+}
+
+header>img {
+    max-height: 5vh;
+    float: left;
+    margin-left: 10%
+}
+
+
+/*menu*/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    width: 100%;
+    background: white;
+    height: 2em;
+}
+
+nav div {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    background: white;
+    float: right;
+    margin-right: 15%;
+}
+
+nav img {
+    height: 2em;
+}
+
+ul {
+    position: absolute;
+    background: #8A2BE2;
+    width: 40%;
+    border-radius: 1em;
+    max-width: 10em;
+    margin-top: 1em;
+    right: 0;
+    transition: margin 1s, visibility 1s;
+}
+
+li {
+    list-style-type: none;
+    padding: 10px;
+}
+
+.hidden {
+    visibility: hidden;
+    margin-top: -10em;
+    transition: margin 2s, visibility 2s;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: lightgray;
+}
+
+
+/* zoekbox */
+
+aside {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 1.5em;
+    padding: 1.5em;
+    margin: 1.5em;
+    max-width: 30em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+aside p {
+    color: #4fcf56;
+    font-family: avenir;
+    font-size: 1.95em;
+    margin-top: -.1em;
+}
+
+button, .button {
+    background-color: rgb(233, 63, 90);
+    box-shadow: 0 -0.3em 0 rgba(0, 0, 0, .1) inset;
+    border-color: transparent;
+    margin-bottom: 1.0em;
+    padding: .6em;
+    border-radius: 1.5em;
+    color: white;
+    font-weight: bold;
+    font-size: 0.7em;
+}
+
+form div button {
+    background-color: #3d1aa8;
+}
+
+input[type="text"] {
+    width: 80%;
+    border-color: transparent;
+    box-shadow: 0 0.3em 0 rgba(0, 0, 0, 0.3);
+    font-family: avenir;
+    font-size: .8em;
+    color: grey;
+    padding-left: 1.3em;
+    line-height: 2.4em;
+    border-radius: 1.5em;
+}
+
+input[type="submit"] {
+    background-color: #4fcf56;
+    max-width: 10%;
+}
+
+
+/*boekenkast*/
+
+main>div {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 1.5em;
+    margin: 1.5em;
+    max-width: 30em;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+/*boeken los*/
+
+div section {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    overflow: auto;
+}
+div section > h2 {
+    font-size: 0.8em;
+    font-weight: normal;
+    transform: rotate(270deg);
+    margin-top: 3em;
+    margin-left: -20em;
+    padding: .3em;
+    position: absolute;
+    color: white;
+    background-color: #3d1aa8;
+    opacity: .5;
+    border: none;
+    border-radius: 1em;
+}
+
+section a img {
+    max-height: 13vh;
+    margin: 1vh;
+}
+
+div section:nth-child(even) {
+    background-color: white;
+}
+
+div section:nth-child(1) {
+    justify-content: center;
+}
+
+div section:nth-child(2) {
+    justify-content: space-around;
+}
+
+div section:nth-child(3) {
+    justify-content: space-around;
+}
+
+div section:nth-child(4) {
+    justify-content: center;
+}
+
+div section:nth-child(5) {
+    justify-content: center;
+}
+
+
+/*responsive*/
+
+@media (max-width: 60em) {
+    div section,
+    aside {
+        max-width: 22em;
+    }
+    div section > h2  {
+        margin-left: -15em;
+    }
+}
+
+/*verwijderen proberen*/
+
+#try {
+    transition: all 0.5s ease;
+    background-color: #ed4a67;
+
+}
+
+#try:hover {
+    padding-top: 4em;
+    padding-bottom: -4em;
+    width: 4em;
+    background-image: url("../images/delete.png");
+    background-repeat: no-repeat;
+    background-position: center 1em;
+}
+

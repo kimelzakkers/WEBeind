@@ -1,0 +1,115 @@
+
+body {
+    margin: 0;
+}
+
+header {
+    height: 3em;
+    width: 100%;
+    background-color: white;
+}
+
+a img {
+    z-index: 0;
+    height: 2em;
+    width: 2em;
+}
+i{
+    font-size: 2em;
+    margin-top: -.3em;
+}
+
+button {
+    z-index: 0;
+    height: 4em;
+    width: 4em;
+
+    margin-left: 5em;
+    background-color: transparent;
+    color: rgb(233, 63, 90);
+    border: none;
+    outline: none;
+}
+
+.material-icons {
+    font-size: 30px !important;
+}
+
+
+body img {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    z-index: -1;
+}
+
+#mobiel {
+    display: block;
+}
+
+#ipad, #desktop {
+    display: none;
+}
+
+h1 {
+    font-family: angel;
+    font-size: 3.8em;
+    color: #c2b49a;
+    text-shadow: 3px 3px 0px rgba(63,107,169, 0.2);
+    margin-top: .1em;
+}
+h2 {
+    font-family: timeless;
+    font-size: .7em;
+    color: #ece5df;
+    margin-top: -5em;
+
+}
+
+article {
+    font-family: timeless;
+    font-size: 1.1em;
+    color: #ece5df;
+}
+
+p {
+    margin-top: 10vh;
+}
+
+header {
+  height: 2em;
+  width: 100%;
+    background-color: white;
+}
+
+a img {
+    z-index: 0;
+    height: 2em;
+    width: 2em;
+}
+
+#like {
+    margin-left: 4em;
+     z-index: 0;
+    height: 1.8em;
+    width: 1.8em;
+}
+
+@media (min-width: 40em) {
+    #mobiel {
+        display: none;
+    }
+    #ipad {
+        display: block;
+    }
+}
+
+@media (min-width: 60em) {
+    #mobiel {
+        display: none;
+    }
+    #desktop {
+        display: block;
+    }
+}

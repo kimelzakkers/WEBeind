@@ -1,0 +1,39 @@
+p {
+    font-size: 0.95em;
+    font-family: sans-serif;
+    max-width: 40em;
+    line-height: 1.3em;
+    margin: 2vh;
+    display: flex;
+}
+
+html {
+     font-family: sans-serif;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  }
+/*
+section {
+     column-count: 2;
+    column-gap: 2em;
+}
+*/
+
+
+h1 {
+    color: #62cb6b;
+}
+
+footer {
+    font-size: 0.7em;
+    color: #dcdcdc;
+}
+
+p {
+    border-bottom-left-radius:
+}
+border-top-left-radius:

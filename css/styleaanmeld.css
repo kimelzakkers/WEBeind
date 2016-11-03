@@ -1,0 +1,114 @@
+html {
+    background: url(../images/achtergrond1.jpg);
+    background-size: cover no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: avenir;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+main section {
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 26.5em 0 -20em rgba(255, 255, 255, .9) inset;
+    margin: 5em;
+    padding: 1.5em;
+    border-radius: 1.5em;
+    min-height: 60vh;
+    max-width: 20em;
+}
+
+main img {
+    max-height: 15em;
+    opacity: 0.8;
+}
+
+label {
+    margin: 1.4em;
+    font-weight: bold;
+
+}
+
+label:last-of-type {
+    font-weight: normal;
+}
+
+button, .button {
+    background-color: rgb(233, 63, 90);
+    box-shadow: 0 -0.3em 0 rgba(0, 0, 0, .1) inset;
+    border-color: transparent;
+    margin-left: 1.3em;
+    padding: 1em;
+    border-radius: 1.5em;
+    color: white;
+    font-weight: bold;
+    font-size: 0.8em;
+}
+
+.lang {
+    width: 90%;
+    border-radius: 1em;
+    border-color: transparent;
+    margin-bottom: 1em;
+    box-shadow: 0 0.3em 0 rgba(0, 0, 0, 0.3);
+    font-family: avenir;
+    font-size: 1em;
+    color: grey;
+    padding-left: 1.3em;
+    line-height: 2.4em;
+}
+
+.lang:hover {
+    background-color: rgba(255, 255, 255, .5);
+}
+
+.lang::-webkit-input-placeholder {
+    color: grey;
+}
+
+.lang:focus {
+    outline: none;
+    background-color: #d3d3d3;
+}
+
+input [type="checkbox"] {
+    margin-top: 2em;
+}
+
+header {
+    background-color: white;
+    margin: -0.7em -0.5em 0em -0.5em;
+    padding: 1.8vh;
+    box-shadow: 0px 21px 56px -16px rgba(128, 128, 128, 0.69);
+}
+
+header img {
+    max-height: 5vh;
+    margin-top: 0.3em;
+    padding-left: 3em;
+}
+
+legend {
+    color: #4fcf56;
+    font-family: avenir;
+    font-size: 1.8em;
+    margin-top: -.1em;
+}
+
+fieldset {
+    border: none;
+}
+
+@media (min-width: 33em) {
+    main section {
+            box-shadow: 0 25em 0 -20em rgba(255, 255, 255, .9) inset;
+    }
+}
+
