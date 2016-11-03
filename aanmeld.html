@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>aanmelden</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='stylesheet' href='css/styleaanmeld.css' type='text/css' />
+</head>
+
+<body>
+
+    <header>
+        <img src="images/transavialogo.jpeg" alt="Logo">
+    </header>
+
+
+    <main>
+        <section>
+
+            <form>
+                <fieldset>
+                    <legend>Wat zijn je gegevens?</legend>
+                    <label>Voornaam
+                        <input class="lang" type="text" name="voornaam" placeholder="b.v. Kim" required>
+                    </label>
+                    <label>Achternaam
+                        <input class="lang" type="text" name="achternaam" placeholder="b.v. Jansen" required>
+                    </label>
+                    <label>Email
+                        <input class="lang" type="email" name="e-mail" placeholder="voorbeeld@voorbeeld.com" required>
+                    </label>
+                    <label>Wachtwoord
+                        <input class="lang" type="password" name="wachtwoord" placeholder="min. 6 karakters" pattern: ".{6,}" required title="Wachtwoord moet minimaal 6 tekens bevatten" required>
+                    </label>
+                    <label>
+                        <input type="checkbox"  name="nieuwsbrief">Ik wil graag mails ontvangen met updates en nieuwe releases.</label>
+                    <div>
+                        <input type="submit" value="ga verder" class="button">
+                        <button type="button">Ik heb al een account</button>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+        <img src="images/translogotransparant.png" alt="Logo Groot">
+    </main>
+</body>
+
+</html>
